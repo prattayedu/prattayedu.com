@@ -1,137 +1,102 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>প্রত্যয় কোচিং হোম</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Satisfy&display=swap" rel="stylesheet" />
-
-<style>
-  /* ফন্ট ও বেসিক স্টাইল */
-  body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0; 
-    padding: 0;
-    background-color: #f4f7fb;
-    color: #333;
-  }
-  header {
-    background-color: #0044cc;
-    color: white;
-    padding: 30px 15px;
-    text-align: center;
-  }
-  header h1 {
-    font-family: 'Satisfy', cursive;
-    font-size: 3rem;
-    margin: 0;
-  }
-  nav {
-    background-color: #002a80;
-    overflow: hidden;
-  }
-  nav a {
-    display: block;
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  nav a:hover {
-    background-color: #66a3ff;
-    color: #002a80;
-  }
-  .content {
-    max-width: 960px;
-    margin: 30px auto 60px;
-    padding: 0 20px;
-  }
-  section {
-    margin-bottom: 50px;
-  }
-  h2 {
-    color: #0044cc;
-    border-bottom: 4px solid #0044cc;
-    padding-bottom: 8px;
-    margin-top: 0;
-  }
-  ul {
-    padding-left: 20px;
-  }
-
-  /* বাটন স্টাইল */
-  .button {
-    background-color: #0044cc;
-    color: white;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-  }
-  .button:hover {
-    background-color: #002a80;
-    text-decoration: none;
-    color: white;
-  }
-
-  /* কার্ড স্টাইল */
-  .card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    padding: 25px;
-    margin-bottom: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  }
-
-  /* ফুটার */
-  footer {
-    background-color: #002a80;
-    color: white;
-    text-align: center;
-    padding: 18px 10px;
-    font-size: 0.9rem;
-  }
-
-  /* রেসপন্সিভ ডিজাইন */
-  @media (max-width: 768px) {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>প্রত্যয় কোচিং হোম</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0044cc;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
     nav a {
-      float: none;
-      width: 100%;
-      text-align: left;
-      padding-left: 20px;
-      border-bottom: 1px solid #0044cc;
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
     }
     .content {
-      padding: 0 15px 80px;
-      margin: 15px auto;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-  }
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 2.2rem;
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 14px;
     }
-    nav a {
-      padding: 12px 20px;
-      font-size: 1rem;
+    
+    /* Events Section */
+    .events-section {
+      background: #f8faff;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 900px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-  }
-</style>
+    .events-section h2 {
+      text-align: center;
+      color: #2a4d69;
+      margin-bottom: 20px;
+    }
+    .event-card {
+      background: white;
+      margin: 15px 0;
+      padding: 15px;
+      border-left: 5px solid #4cafef;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .event-card:hover {
+      transform: translateX(5px);
+    }
+    .event-date {
+      font-weight: bold;
+      color: #4cafef;
+    }
+    .event-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .event-desc {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
@@ -144,11 +109,11 @@
   <a href="#home">হোম</a>
   <a href="#about">আমাদের সম্পর্কে</a>
   <a href="#courses">কোর্সসমূহ</a>
+  <a href="#events">ইভেন্টস</a>
   <a href="#contact">যোগাযোগ</a>
 </nav>
 
 <div class="content">
-
   <section id="home">
     <h2>স্বাগতম</h2>
     <p>আমাদের প্রতিষ্ঠান শিক্ষার মান উন্নয়নে প্রতিশ্রুতিবদ্ধ।</p>
@@ -161,24 +126,17 @@
 
   <section id="courses">
     <h2>কোর্সসমূহ</h2>
+    <ul>
+      <li>ওয়েব ডেভেলপমেন্ট</li>
+      <li>গ্রাফিক ডিজাইন</li>
+      <li>ডিজিটাল মার্কেটিং</li>
+    </ul>
+  </section>
 
-    <div class="card">
-      <h3>৫ম থেকে দ্বাদশ শ্রেণি একাডেমিক</h3>
-      <p>স্কুল ভিত্তিক সিলেবাস অনুযায়ী পাঠদান</p>
-      <a href="#" class="button">আরও জানুন</a>
-    </div>
-
-    <div class="card">
-      <h3>মডেল টেস্ট প্রেগ্রাম</h3>
-      <p>এস.এস.সি, এইচ.এস.সি</p>
-      <a href="#" class="button">আরও জানুন</a>
-    </div>
-
-    <div class="card">
-      <h3>পাঠ্যবই অনুযায়ী পাঠদান</h3>
-      <p> পঞ্চম শ্রেণি থেকে দ্বাদশ শ্রেণি</p>
-      <a href="#" class="button">আরও জানুন</a>
-    </div>
+  <!-- Dynamic Events Section -->
+  <section id="events" class="events-section">
+    <h2>📅 Upcoming Events & Announcements</h2>
+    <div id="event-list">লোড হচ্ছে...</div>
   </section>
 
   <section id="contact">
@@ -186,13 +144,11 @@
     <p>ঠিকানা: লামাবাজার, সিলেট সিটি কর্পোরেশন, বাংলাদেশ</p>
     <p>মোবাইল: +8801749577877</p>
     <p>ইমেইল: info@prattayedu.com</p>
-
     <p>আমাদের Facebook পেজ: 
       <a href="https://www.facebook.com/prattaycoaching" target="_blank" rel="noopener noreferrer" style="color:#0044cc; text-decoration:underline;">
         Facebook
       </a>
     </p>
-
     <div style="margin-top:15px;">
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.18849347542053!2d91.86130813322963!3d24.897439422266345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750552df64c8961%3A0x8f4730235eafbea4!2sPratyay%20Coaching%20Home!5e0!3m2!1sen!2sbd!4v1754748446599!5m2!1sen!2sbd" 
@@ -200,12 +156,42 @@
       </iframe>
     </div>
   </section>
-
 </div>
 
 <footer>
-  <p>&copy; ২০২৫ প্রত্যয় একটি সহায়ক শিক্ষা প্রতিষ্ঠান</p>
+  <p>&copy; 2025 প্রত্যয় একটি সহায়ক শিক্ষা প্রতিষ্ঠান</p>
 </footer>
+
+<script>
+  async function loadEvents() {
+    const eventList = document.getElementById('event-list');
+    eventList.innerHTML = "লোড হচ্ছে...";
+
+    try {
+      const response = await fetch('events.json');
+      if (!response.ok) throw new Error('ইভেন্ট ডাটা লোড করতে সমস্যা হয়েছে।');
+
+      const events = await response.json();
+      eventList.innerHTML = "";
+
+      events.forEach(event => {
+        const card = document.createElement('div');
+        card.classList.add('event-card');
+        card.innerHTML = `
+          <div class="event-date">${event.date}</div>
+          <div class="event-title">${event.title}</div>
+          <div class="event-desc">${event.desc}</div>
+        `;
+        eventList.appendChild(card);
+      });
+
+    } catch (error) {
+      eventList.innerHTML = `<p style="color:red;">${error.message}</p>`;
+    }
+  }
+
+  loadEvents();
+</script>
 
 </body>
 </html>
