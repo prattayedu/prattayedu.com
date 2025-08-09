@@ -22,11 +22,27 @@
     color: white;
     padding: 30px 15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  header img {
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
   }
   header h1 {
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
     margin: 0;
+    vertical-align: middle;
+  }
+  header p {
+    width: 100%;
+    margin-top: 8px;
+    font-size: 1.2rem;
   }
   nav {
     background-color: #002a80;
@@ -159,6 +175,9 @@
       padding: 0 15px 80px;
       margin: 15px auto;
     }
+    header {
+      justify-content: center;
+    }
   }
   @media (max-width: 480px) {
     header h1 {
@@ -173,19 +192,12 @@
 </head>
 <body>
 
-  header img {
-  vertical-align: middle;
-  margin-right: 15px;
-}
-header h1 {
-  display: inline-block;
-  vertical-align: middle;
-}
-  
 <header>
-  <img src="https://drive.google.com/uc?export=view&id=1N1jXlBBL4I6y3X4GIxWXhu47dr8aSJxC" alt="Logo" width="800" />
-  <h1>প্রত্যয় কোচিং হোম</h1>
-  <p>শিক্ষার মান উন্নয়নে আমাদের প্রচেষ্টা</p>
+  <img src="https://drive.google.com/uc?export=view&id=1N1jXlBBL4I6y3X4GIxWXhu47dr8aSJxC" alt="Logo" />
+  <div>
+    <h1>প্রত্যয় কোচিং হোম</h1>
+    <p>শিক্ষার মান উন্নয়নে আমাদের প্রচেষ্টা</p>
+  </div>
 </header>
 
 <nav>
@@ -260,7 +272,6 @@ header h1 {
     <li><a href="https://sylhetboard.gov.bd/" target="_blank" rel="noopener noreferrer">সিলেট শিক্ষা বোর্ড</a></li>
     <li><a href="https://sust.edu/" target="_blank" rel="noopener noreferrer">সাস্ট</a></li>
     <li><a href="https://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer">ফলাফল বোর্ড</a></li>
-    <li><a href="https://www.bbc.com/bengali" target="_blank" rel="noopener noreferrer">BBC বাংলা</a></li>
     <li><a href="https://www.education.gov.bd/" target="_blank" rel="noopener noreferrer">শিক্ষা মন্ত্রণালয়</a></li>
   </ul>
 </section>
@@ -271,5 +282,3 @@ header h1 {
 
 </body>
 </html>
-
-
