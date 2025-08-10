@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -288,327 +288,6 @@
     <p>আমাদের প্রতিষ্ঠান শিক্ষার মান উন্নয়নে প্রতিশ্রুতিবদ্ধ।</p>
   </section>
 
-
-<html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <title>Lightbox Example</title>
-  <link rel="stylesheet" href="../dist/css/lightbox.min.css">
-</head>
-<body>
-
-  <section>
-    <h3>ভর্তি বিজ্ঞপ্তি Individual Images</h3>
-    <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
-    </div>
-
-    <hr />
-
-    <h3>ভর্তি বিজ্ঞপ্তি Image Set</h3>
-    <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
-    </div>
-  </section>
-
-  <section>
-    <p>
-      For more information, visit <a href="https://www.facebook.com/prattaycoaching">http://lokeshdhakar.com/projects/lightbox2/</a>
-    </p>
-  </section>
-
-  <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
-
-  <!-- <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../src/js/lightbox.js"></script> -->
-  
-  
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>প্রত্যয় কোচিং হোম</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Satisfy&display=swap" rel="stylesheet" />
-
-  <style>
-    /* বেসিক বডি স্টাইল */
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f7fb;
-      color: #333;
-    }
-
-    /* নতুন হেডার CSS */
-    header {
-      background: linear-gradient(90deg, #003399, #0059cc);
-      color: white;
-      padding: 25px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border-radius: 0 0 15px 15px;
-    }
-    .left-section {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .left-section h1 {
-      font-family: 'Satisfy', cursive;
-      font-size: 3.2rem;
-      margin: 0;
-      line-height: 1;
-      letter-spacing: 1px;
-    }
-    .left-section p {
-      margin: 5px 0 0 0;
-      font-size: 1.2rem;
-      font-weight: 500;
-      opacity: 0.9;
-    }
-    .left-section img.logo {
-      height: 70px;
-      width: auto;
-    }
-    nav {
-      background-color: #002a80;
-      flex-grow: 1;
-      margin-left: 40px;
-      border-radius: 6px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      padding: 14px 22px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: block;
-      text-align: center;
-      border-right: 1px solid rgba(255,255,255,0.2);
-    }
-    nav a:last-child {
-      border-right: none;
-    }
-    nav a:hover {
-      background-color: #66a3ff;
-      color: #002a80;
-    }
-    .right-section {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-    .right-section .icon {
-      font-size: 32px;
-      animation: float 4s ease-in-out infinite;
-      user-select: none;
-      transition: transform 0.3s ease;
-      cursor: default;
-    }
-    .right-section .icon:hover {
-      transform: scale(1.2) rotate(10deg);
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      header {
-        padding: 30px 20px;
-        flex-direction: column;
-        align-items: center;
-      }
-      .left-section h1 {
-        font-size: 2.8rem;
-      }
-      .left-section img.logo {
-        height: 60px;
-      }
-      .left-section p {
-        font-size: 1.1rem;
-      }
-      nav {
-        margin: 15px 0 0 0;
-        width: 100%;
-        border-radius: 6px;
-        justify-content: space-around;
-        margin-left: 0;
-      }
-      nav a {
-        padding: 12px 15px;
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-      }
-      nav a:last-child {
-        border-bottom: none;
-      }
-      .right-section .icon {
-        font-size: 28px;
-        margin-top: 10px;
-      }
-    }
-    @media (max-width: 480px) {
-      header {
-        padding: 20px 10px;
-      }
-      .left-section h1 {
-        font-size: 2.4rem;
-      }
-      .right-section .icon {
-        font-size: 24px;
-      }
-      nav a {
-        font-size: 1rem;
-        padding: 10px 10px;
-      }
-    }
-
-    /* বাকি CSS */
-    .content {
-      max-width: 960px;
-      margin: 30px auto 60px;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    h2 {
-      color: #0044cc;
-      border-bottom: 4px solid #0044cc;
-      padding-bottom: 8px;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .button {
-      background-color: #0044cc;
-      color: white;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 1rem;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #002a80;
-      text-decoration: none;
-      color: white;
-    }
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 25px;
-      margin-bottom: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    #important-links {
-      max-width: 900px;
-      margin: 40px auto 60px auto;
-      background: #eef6ff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-    #important-links h2 {
-      text-align: center;
-      color: #0044cc;
-      font-family: 'Poppins', sans-serif;
-      margin-bottom: 20px;
-    }
-    #important-links ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-    #important-links ul li a {
-      text-decoration: none;
-      color: #0044cc;
-      font-weight: 600;
-      border: 1px solid #0044cc;
-      padding: 10px 15px;
-      border-radius: 6px;
-      display: inline-block;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    #important-links ul li a:hover {
-      background-color: #0044cc;
-      color: white;
-    }
-    footer {
-      background-color: #002a80;
-      color: white;
-      text-align: center;
-      padding: 18px 10px;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <div class="left-section">
-    <img src="https://i.imgur.com/vHRnfQp.jpg" alt="Logo" class="logo" />
-    <div class="title-text">
-      <h1>প্রত্যয় কোচিং হোম</h1>
-      <p>শিক্ষার মান উন্নয়নে আমাদের প্রচেষ্টা</p>
-    </div>
-  </div>
-
-  <nav>
-    <a href="#home">হোম</a>
-    <a href="#about">আমাদের সম্পর্কে</a>
-    <a href="#courses">কোর্সসমূহ</a>
-    <a href="#contact">যোগাযোগ</a>
-  </nav>
-
-  <div class="right-section">
-    <div class="icon" title="বই">📚</div>
-    <div class="icon" title="কলম">✏️</div>
-    <div class="icon" title="শিক্ষার্থী">👩‍🎓</div>
-  </div>
-</header>
-
-<div class="content">
-
-  <section id="home">
-    <h2>স্বাগতম</h2>
-    <p>আমাদের প্রতিষ্ঠান শিক্ষার মান উন্নয়নে প্রতিশ্রুতিবদ্ধ।</p>
-  </section>
-
   <section id="about">
     <h2>আমাদের সম্পর্কে</h2>
     <p>আমরা একটি আধুনিক শিক্ষা প্রতিষ্ঠান, যা শিক্ষার্থীদের সর্বোত্তম শিক্ষা প্রদানে সচেষ্ট।</p>
@@ -619,21 +298,31 @@
 
     <div class="card">
       <h3>৫ম থেকে দ্বাদশ শ্রেণি একাডেমিক</h3>
+      <a href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="courses-gallery" data-title="৫ম থেকে দ্বাদশ শ্রেণি একাডেমিক কোর্স">
+        <img src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="৫ম থেকে দ্বাদশ শ্রেণি একাডেমিক" class="lightbox-thumb" />
+      </a>
       <p>স্কুল ভিত্তিক সিলেবাস অনুযায়ী পাঠদান</p>
       <a href="#" class="button">আরও জানুন</a>
     </div>
 
     <div class="card">
       <h3>মডেল টেস্ট প্রেগ্রাম</h3>
+      <a href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="courses-gallery" data-title="মডেল টেস্ট প্রোগ্রাম">
+        <img src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="মডেল টেস্ট প্রোগ্রাম" class="lightbox-thumb" />
+      </a>
       <p>এস.এস.সি, এইচ.এস.সি</p>
       <a href="#" class="button">আরও জানুন</a>
     </div>
 
     <div class="card">
       <h3>পাঠ্যবই অনুযায়ী পাঠদান</h3>
+      <a href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="courses-gallery" data-title="পাঠ্যবই অনুযায়ী পাঠদান">
+        <img src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt="পাঠ্যবই অনুযায়ী পাঠদান" class="lightbox-thumb" />
+      </a>
       <p>পঞ্চম শ্রেণি থেকে দ্বাদশ শ্রেণি</p>
       <a href="#" class="button">আরও জানুন</a>
     </div>
+
   </section>
 
   <section id="contact">
@@ -673,6 +362,19 @@
 <footer>
   <p>&copy; ২০২৫ প্রত্যয় একটি সহায়ক শিক্ষা প্রতিষ্ঠান</p>
 </footer>
+
+<!-- JQuery এবং Lightbox JS (body শেষে) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<script>
+  lightbox.option({
+    'resizeDuration': 300,
+    'fadeDuration': 500,
+    'imageFadeDuration': 500,
+    'wrapAround': true
+  });
+</script>
 
 </body>
 </html>
